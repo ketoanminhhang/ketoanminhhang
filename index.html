@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hướng dẫn nộp báo cáo sử dụng lao động tại Bắc Ninh</title>
-<meta name="description" content="Hướng dẫn doanh nghiệp tại tỉnh Bắc Ninh nộp báo cáo tình hình sử dụng lao động (Mẫu 01/PLI) cho Sở Nội vụ: hạn nộp, cách nộp online, nộp bản giấy, thông tin liên hệ.">
+<meta name="description" content="Hướng dẫn doanh nghiệp tại tỉnh Bắc Ninh nộp báo cáo tình hình sử dụng lao động (Mẫu 01/PLI) cho Sở Nội vụ: hạn nộp, nộp bản giấy, thông tin liên hệ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -47,12 +47,35 @@ section{scroll-margin-top:12px}
 footer{padding:28px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 @media (max-width:560px){dl{grid-template-columns:1fr;gap:2px}dt{margin-top:10px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero{background:linear-gradient(135deg,#17307a 0%,#312e81 100%);color:#fff;padding:34px 0 30px;margin-bottom:6px}
+.hero h1{color:#fff}
+.hero p.site{color:#c7d2fe;font-weight:700;font-size:16px}
+.hero .lead{color:#dbe4ff}
+.hero .deadline{background:#fff;color:#12292f;border-left-color:#f97316;margin:24px 0 8px}
+.hero .deadline .big{color:#c2410c}
+nav.menu a{color:#fff;border:0;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+nav.menu a:hover{color:#fff;filter:brightness(1.12)}
+nav.menu a:nth-child(1){background:#1d4ed8}
+nav.menu a:nth-child(2){background:#0f766e}
+nav.menu a:nth-child(3){background:#047857}
+nav.menu a:nth-child(4){background:#e11d48}
+nav.menu a:nth-child(5){background:#0e7490}
+nav.menu a:nth-child(6){background:#6d28d9}
+nav.menu a:nth-child(7){background:#a21caf}
+nav.menu a:nth-child(8){background:#0369a1}
+nav.menu a:nth-child(9){background:linear-gradient(135deg,#ea580c,#e11d48)}
+section{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c,#1d4ed8);border-radius:10px;padding:20px 24px;margin:18px 0}
+#giay{--c:#1d4ed8}#noi-nhan{--c:#0f4c5c}#bien-dong{--c:#0f766e}#atvsld{--c:#047857}#tai-nan{--c:#e11d48}#y-te{--c:#0e7490}#thue-lai{--c:#6d28d9}#bhtn{--c:#a21caf}#mau{--c:#0369a1}#lienhe{--c:#ea580c}
+section h2{margin-top:0}
+.note{background:var(--bg)}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;background:linear-gradient(135deg,#ea580c,#e11d48);color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+footer{padding-bottom:90px}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <p class="site">Dịch vụ kế toán Minh Hằng · Hỗ trợ doanh nghiệp tại Bắc Ninh · ĐT 0379 385 863</p>
+<header class="hero"><div class="wrap">
+  <p class="site">🏢 Dịch vụ kế toán Minh Hằng · Hỗ trợ doanh nghiệp tại Bắc Ninh · ĐT 0379 385 863</p>
   <h1>Nộp báo cáo tình hình sử dụng lao động tại Bắc Ninh</h1>
   <p class="lead">Dành cho người sử dụng lao động có trụ sở, chi nhánh hoặc văn phòng đại diện tại tỉnh Bắc Ninh. Báo cáo 6 tháng cuối năm (báo cáo năm) 2026 theo Mẫu số 01/PLI gửi Sở Nội vụ.</p>
 
@@ -61,37 +84,33 @@ footer{padding:28px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
     <p>Nộp chậm nhất ngày <strong>05/12/2026</strong>. Nên nộp trước ngày 04/12 để còn thời gian sửa nếu hệ thống báo lỗi.</p>
   </div>
   <nav class="menu" aria-label="Các loại báo cáo">
-    <a href="#online">1. Sử dụng lao động</a>
-    <a href="#bien-dong">2. Biến động lao động</a>
-    <a href="#atvsld">3. An toàn vệ sinh lao động</a>
-    <a href="#tai-nan">4. Tai nạn lao động</a>
-    <a href="#y-te">5. Y tế lao động</a>
-    <a href="#thue-lai">6. Cho thuê lại lao động</a>
-    <a href="#bhtn">7. Bảo hiểm thất nghiệp</a>
-    <a href="#mau">Mẫu biểu</a>
-    <a class="zalo" href="tel:0379385863">Gọi Dịch vụ kế toán Minh Hằng: 0379 385 863</a>
+    <a href="#giay">📋 1. Sử dụng lao động</a>
+    <a href="#bien-dong">🔄 2. Biến động lao động</a>
+    <a href="#atvsld">🦺 3. An toàn vệ sinh lao động</a>
+    <a href="#tai-nan">🚑 4. Tai nạn lao động</a>
+    <a href="#y-te">🩺 5. Y tế lao động</a>
+    <a href="#thue-lai">🤝 6. Cho thuê lại lao động</a>
+    <a href="#bhtn">🛡️ 7. Bảo hiểm thất nghiệp</a>
+    <a href="#mau">📥 Mẫu biểu</a>
+    <a class="zalo" href="tel:0379385863">📞 Gọi Dịch vụ kế toán Minh Hằng: 0379 385 863</a>
   </nav>
-</header>
+</div></header>
+<div class="wrap">
 
 <main>
-<section id="online">
-  <h2>1. Báo cáo tình hình sử dụng lao động: nộp trực tuyến</h2>
-  <ol class="steps">
-    <li>Vào Cổng Dịch vụ công Quốc gia và đăng nhập (chưa có tài khoản thì chọn Đăng ký).</li>
-    <li>Tìm thủ tục <strong>Báo cáo tình hình sử dụng lao động</strong>, hoặc thủ tục liên thông đăng ký điều chỉnh đóng BHXH, BHYT, BHTN và báo cáo tình hình sử dụng lao động.</li>
-    <li>Bấm <strong>Nộp trực tuyến</strong> và kê khai thông tin đơn vị.</li>
-    <li>Chọn cơ quan nhận là <strong>Sở Nội vụ tỉnh Bắc Ninh</strong>; nhập mã đơn vị và mã cơ quan BHXH tương ứng.</li>
-    <li>Bấm <strong>Đăng ký</strong> để hệ thống ghi nhận, rồi lưu biên nhận.</li>
-  </ol>
-  <p><a class="btn" href="https://vpcp.dichvucong.gov.vn/" target="_blank" rel="noopener">Mở Cổng Dịch vụ công Quốc gia</a></p>
-  <p>Mẫu tải về: <a href="mau-01-bc-su-dung-lao-dong.xlsx" download>Mẫu báo cáo tình hình sử dụng lao động 2026 (Excel)</a></p>
-  <div class="note">Từ 29/05/2026 Cổng Dịch vụ công Quốc gia chạy ở địa chỉ vpcp.dichvucong.gov.vn. Nếu bạn thấy tài liệu cũ ghi dichvucong.gov.vn thì dùng địa chỉ mới.</div>
+<section id="noi-nhan">
+  <h2>Nơi nhận từng loại báo cáo</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Báo cáo</th><th>Hạn nộp</th><th>Nơi nhận</th></tr></thead>
+    <tbody><tr><td>1. Báo cáo tình hình sử dụng lao động</td><td>Trước 05/12/2026</td><td><strong>Sở Nội vụ</strong>; đồng thời thông báo cho cơ quan BHXH khu vực. Lao động trong khu công nghiệp, khu kinh tế: gửi thêm Ban quản lý khu công nghiệp, khu kinh tế.</td></tr><tr><td>2. Thông báo biến động lao động (tăng hoặc giảm từ 50 người)</td><td>Khi phát sinh</td><td><strong>Tổ chức dịch vụ việc làm công</strong> nơi doanh nghiệp đặt trụ sở.</td></tr><tr><td>3. Báo cáo an toàn, vệ sinh lao động</td><td>Trước 10/01/2027</td><td><strong>Sở Nội vụ</strong> và <strong>Sở Y tế</strong>.</td></tr><tr><td>4. Báo cáo tai nạn lao động</td><td>Trước 10/01/2027</td><td><strong>Sở Nội vụ</strong>.</td></tr><tr><td>5. Báo cáo y tế lao động</td><td>Trước 10/01/2027</td><td><strong>Cơ quan y tế</strong> nơi đặt trụ sở chính, theo hướng dẫn của Sở Y tế Bắc Ninh (có thể là Trạm y tế phường, xã hoặc Trung tâm y tế). Nên gọi hỏi trước khi nộp. Đơn vị trực thuộc bộ, ngành gửi thêm đơn vị y tế bộ, ngành.</td></tr><tr><td>6. Báo cáo hoạt động cho thuê lại lao động</td><td>Trước 20/12/2026</td><td><strong>UBND tỉnh</strong> và <strong>Sở Nội vụ</strong>; báo cáo thêm tại địa phương nơi cho thuê lại nếu hoạt động khác tỉnh.</td></tr><tr><td>7. Báo cáo tình hình tham gia bảo hiểm thất nghiệp</td><td>Trước 15/01/2027</td><td><strong>Sở Nội vụ</strong>.</td></tr></tbody>
+  </table></div>
+  <p>Địa chỉ và số điện thoại các cơ quan nhận xem ở mục <a href="#lienhe">Thông tin liên hệ</a>.</p>
 </section>
-
 <section id="giay">
   <h2>1. Báo cáo tình hình sử dụng lao động: nộp bản giấy</h2>
   <p>Dùng khi không nộp được trực tuyến. Gửi báo cáo theo <strong>Mẫu số 01/PLI</strong> (Phụ lục I, Nghị định 145/2020/NĐ-CP) đến Sở Nội vụ, đồng thời thông báo cho cơ quan BHXH khu vực nơi đặt trụ sở, chi nhánh hoặc văn phòng đại diện.</p>
   <p>Người đại diện có thẩm quyền ký, ghi rõ họ tên và đóng dấu.</p>
+  <p>Mẫu tải về: <a href="mau-01-bc-su-dung-lao-dong.xlsx" download>Mẫu báo cáo tình hình sử dụng lao động 2026 (Excel)</a></p>
   <div class="note"><strong>Lao động làm việc trong khu công nghiệp, khu kinh tế:</strong> gửi thêm cho Ban quản lý khu công nghiệp, khu kinh tế để theo dõi.</div>
 </section>
 
@@ -123,7 +142,7 @@ footer{padding:28px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
 </section>
 <section id="y-te">
   <h2>5. Báo cáo y tế lao động</h2>
-  <dl><dt>Ai phải nộp</dt><dd>Cơ sở lao động</dd><dt>Hạn nộp</dt><dd>Trước 10/01/2027</dd><dt>Mẫu và căn cứ</dt><dd>Phụ lục 8 Thông tư 19/2016/TT-BYT, Điều 10</dd><dt>Nơi nhận</dt><dd>Trung tâm y tế nơi đặt trụ sở chính; đơn vị quản lý y tế bộ, ngành nếu thuộc phạm vi quản lý</dd><dt>Mẫu tải về</dt><dd><a href="mau-05-y-te-lao-dong.xlsx" download>Mẫu báo cáo y tế lao động (Excel)</a></dd></dl>
+  <dl><dt>Ai phải nộp</dt><dd>Cơ sở lao động</dd><dt>Hạn nộp</dt><dd>Trước 10/01/2027</dd><dt>Mẫu và căn cứ</dt><dd>Phụ lục 8 Thông tư 19/2016/TT-BYT, Điều 10</dd><dt>Nơi nhận</dt><dd>Cơ quan y tế nơi đặt trụ sở chính, theo hướng dẫn của Sở Y tế Bắc Ninh (có thể là Trạm y tế phường, xã hoặc Trung tâm y tế); nên gọi hỏi trước khi nộp. Đơn vị trực thuộc bộ, ngành gửi thêm đơn vị y tế bộ, ngành</dd><dt>Mẫu tải về</dt><dd><a href="mau-05-y-te-lao-dong.xlsx" download>Mẫu báo cáo y tế lao động (Excel)</a></dd></dl>
 </section>
 <section id="thue-lai">
   <h2>6. Báo cáo hoạt động cho thuê lại lao động</h2>
@@ -152,6 +171,7 @@ footer{padding:28px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
   <p>Thông tin mang tính tham khảo, tổng hợp từ các văn bản và hướng dẫn công khai. Trang này không phải của cơ quan nhà nước; hãy đối chiếu với thông báo mới nhất của Sở Nội vụ tỉnh Bắc Ninh trước khi nộp.</p>
   <p>© 2026 Dịch vụ kế toán Minh Hằng</p>
 </footer>
+<a class="fab" href="tel:0379385863">📞 Gọi 0379 385 863</a>
 </div>
 
 <script>
